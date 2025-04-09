@@ -40,7 +40,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-top: 155px;
+  padding-top: 148px;
   margin-bottom: 0;
 }
 
@@ -69,11 +69,11 @@ html {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 75px;
-  padding-top: 80px;
+  padding-top: 72px;
   letter-spacing: 0em;
   margin: 0;
   line-height: 0.94;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
 }
 
 /* Список карточек */
@@ -84,9 +84,8 @@ html {
   width: 100%;
   padding: 0;
   margin: 0;
-  gap: 5px;
+  gap: 11px;
   display: flex;
-  scrollbar-gutter: stable;
   flex-direction: column;
   scroll-behavior: smooth;
 }
@@ -95,7 +94,6 @@ html {
 .content__list-container {
   position: relative;
   height: 298px;
-  scrollbar-gutter: stable;
   border: none;
   overflow-y: auto;
 }
@@ -103,7 +101,7 @@ html {
 .content__list-item {
   width: 390px;
   padding-left: 1px;
-  padding-bottom: 19px; /* Уменьшаем отступ снизу */
+  padding-bottom: 19px;
 }
 
 .content__list-item:last-child {
@@ -115,7 +113,7 @@ html {
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  gap: 10px; /* Добавляем gap между текстом и изображением */
+
 }
 
 .content__video-card-title {
@@ -129,9 +127,9 @@ html {
   text-overflow: ellipsis;
   max-width: 100%;
   text-decoration: none;
-  line-height: 1; /* Уменьшаем line-height */
-  margin: 0; /* Убираем все margin */
-  padding: 0; /* Убираем все padding */
+  line-height: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .content__video-card-description-container {
@@ -159,19 +157,19 @@ html {
   margin: 0; /* Убираем все margin */
   padding: 0; /* Убираем все padding */
 }
-}
 
 .content__accent {
   color: #545050;
 }
 
 .content__video-card-thumbnail {
-  width: 195px;
+  width: 200px;
+  height: 103px;
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
   overflow: hidden;
-  padding-left: px; /* Заменяем padding-left на margin-left */
+  padding-left: 6px; /* Заменяем padding-left на margin-left */
 }
 
 .content__card-link {
@@ -215,7 +213,7 @@ html {
 .search-form__checkbox-list {
   display: flex;
   gap: 12px;
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 }
 
 .search-form__fieldset-title {
@@ -223,7 +221,7 @@ html {
   font-weight: 400;
   font-size: 18px;
   color: #fff;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 
 .search-form__fieldset {
@@ -351,9 +349,9 @@ html {
 }
 
 .more-button {
-  width: 100%;
-  padding: 6px 0;
+  padding: 5px 142px;
   margin-top: 30px;
+  margin-bottom: 4px;
 }
 
 .visually-hidden {
