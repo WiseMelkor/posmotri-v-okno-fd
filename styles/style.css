@@ -28,7 +28,7 @@ html {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  gap: 20px;
+  gap: 32px;
   width: 100%;
   max-width: 1140px;
   padding-left: 160px;
@@ -49,7 +49,7 @@ html {
   flex-direction: column;
   width: 399px;
   height: 100%;
-  gap: 16px;
+  gap: 15px;
   overflow: hidden;
 }
 
@@ -69,21 +69,24 @@ html {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 75px;
-  padding-left: 10px;
   padding-top: 80px;
   letter-spacing: 0em;
   margin: 0;
   line-height: 0.94;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
 }
 
 /* Список карточек */
 .content__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  width: 100%;
   padding: 0;
   margin: 0;
-  gap: 12px;
+  gap: 5px;
   display: flex;
+  scrollbar-gutter: stable;
   flex-direction: column;
   scroll-behavior: smooth;
 }
@@ -91,18 +94,16 @@ html {
 
 .content__list-container {
   position: relative;
-  width: 399px;
   height: 298px;
   scrollbar-gutter: stable;
   border: none;
   overflow-y: auto;
 }
-/*overflow-y: auto;*/
 
 .content__list-item {
   width: 390px;
-  padding-left: 13px;
-  padding-bottom: 18px;
+  padding-left: 1px;
+  padding-bottom: 19px; /* Уменьшаем отступ снизу */
 }
 
 .content__list-item:last-child {
@@ -113,8 +114,8 @@ html {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
   width: 100%;
+  gap: 10px; /* Добавляем gap между текстом и изображением */
 }
 
 .content__video-card-title {
@@ -128,12 +129,19 @@ html {
   text-overflow: ellipsis;
   max-width: 100%;
   text-decoration: none;
+  line-height: 1; /* Уменьшаем line-height */
+  margin: 0; /* Убираем все margin */
+  padding: 0; /* Убираем все padding */
 }
 
 .content__video-card-description-container {
   min-width: 0;
   flex: 1;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2px;
+  gap: 2px; /* Минимальный отступ между заголовком и описанием */
 }
 
 .content__video-card-description {
@@ -147,6 +155,10 @@ html {
   text-decoration-thickness: 1px;
   font-size: 18px;
   content: "...";
+  line-height: 1.2; /* Уменьшаем line-height */
+  margin: 0; /* Убираем все margin */
+  padding: 0; /* Убираем все padding */
+}
 }
 
 .content__accent {
@@ -154,12 +166,12 @@ html {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
+  width: 195px;
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
   overflow: hidden;
-  padding-left: 13px;
+  padding-left: px; /* Заменяем padding-left на margin-left */
 }
 
 .content__card-link {
