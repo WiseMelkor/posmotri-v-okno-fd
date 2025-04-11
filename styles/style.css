@@ -31,7 +31,7 @@ html {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  gap: 30px;
+  gap: 32px;
   width: 100%;
   max-width: 1140px;
   align-items: end; /* Выравниваем содержимое ячеек по низу */
